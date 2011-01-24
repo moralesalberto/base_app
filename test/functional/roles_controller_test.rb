@@ -13,6 +13,13 @@ class RolesControllerTest < ActionController::TestCase
     assert_not_nil assigns(:roles)
   end
 
+  test "an admin should not get here" do
+    @user = users(:admin)
+    sign_in @user
+    get :index
+    assert_response 403
+  end
+
   test "should get new" do
     get :new
     assert_response :success
