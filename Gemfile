@@ -39,5 +39,6 @@ gem 'will_paginate'
 #
 group :test do
   gem 'simplecov', '>= 0.3.8', :require => false # Will install simplecov-html as a dependency
+  gem 'shoulda'
 end
 

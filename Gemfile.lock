@@ -82,6 +82,7 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.4)
       archive-tar-minitar (>= 0.5.2)
+    shoulda (2.11.3)
     simplecov (0.3.9)
       simplecov-html (>= 0.3.7)
     simplecov-html (0.3.9)
@@ -104,6 +105,7 @@ DEPENDENCIES
   paperclip
   rails (= 3.0.3)
   ruby-debug19
+  shoulda
   simplecov (>= 0.3.8)
   web-app-theme
   will_paginate
