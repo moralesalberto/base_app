@@ -2,8 +2,8 @@ require 'test_helper'
 
 class RolesControllerTest < ActionController::TestCase
   setup do
-    @role = roles(:user)
-    @user = users(:admin)
+    @role = roles(:security)
+    @user = users(:security)
     sign_in @user          # sign_in(resource)
   end
 

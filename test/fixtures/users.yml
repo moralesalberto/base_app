@@ -1,3 +1,7 @@
 admin:
-  email: admin@admin.com
+  email: admin@company.com
+
+security:
+  email: security@company.com
+  access_lists: security
 
