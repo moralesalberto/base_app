@@ -2,7 +2,9 @@ require 'test_helper'
 
 class RolesControllerTest < ActionController::TestCase
   setup do
-    @role = roles(:one)
+    @role = roles(:user)
+    @user = users(:admin)
+    sign_in @user          # sign_in(resource)
   end
 
   test "should get index" do
@@ -18,7 +20,7 @@ class RolesControllerTest < ActionController::TestCase
 
   test "should create role" do
     assert_difference('Role.count') do
-      post :create, :role => @role.attributes
+      post :create, :role => Role.new(:name => 'create role') 
     end
 
     assert_redirected_to role_path(assigns(:role))
