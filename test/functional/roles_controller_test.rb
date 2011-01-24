@@ -20,10 +20,16 @@ class RolesControllerTest < ActionController::TestCase
 
   test "should create role" do
     assert_difference('Role.count') do
-      post :create, :role => Role.new(:name => 'create role') 
+      @new_role = Role.new(:name => 'create role')
+      post :create, :role =>  @new_role.attributes
     end
-
     assert_redirected_to role_path(assigns(:role))
+  end
+
+  test "should render new if not created" do
+    new_role = Role.new(:name => '')
+    post :create, :role => new_role.attributes
+    assert_response :success  
   end
 
   test "should show role" do
@@ -39,6 +45,12 @@ class RolesControllerTest < ActionController::TestCase
   test "should update role" do
     put :update, :id => @role.to_param, :role => @role.attributes
     assert_redirected_to role_path(assigns(:role))
+  end
+
+  test "should render edit if not updated" do
+    @role.name = ''
+    post :update, :id => @role.to_param, :role => @role.attributes
+    assert_response :success  
   end
 
   test "should destroy role" do

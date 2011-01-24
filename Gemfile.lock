@@ -82,6 +82,9 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.4)
       archive-tar-minitar (>= 0.5.2)
+    simplecov (0.3.9)
+      simplecov-html (>= 0.3.7)
+    simplecov-html (0.3.9)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -101,5 +104,6 @@ DEPENDENCIES
   paperclip
   rails (= 3.0.3)
   ruby-debug19
+  simplecov (>= 0.3.8)
   web-app-theme
   will_paginate
