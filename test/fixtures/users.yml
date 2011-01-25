@@ -1,7 +1,12 @@
 admin:
   email: admin@company.com
+  roles: admin
 
 security:
   email: security@company.com
-  access_lists: security
+  roles: security
+
+super_user:
+  email: super_user@super.com
+  roles: security, admin
 

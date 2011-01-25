@@ -20,5 +20,8 @@ class RoleTest < ActiveSupport::TestCase
     
     assert(role2.errors.size > 0, "two roles can not have the same name")
   end
-
+  
+  test "All roles in the application consist of:" do
+    %w(admin security user).sort == Role.roles.sort
+  end
 end

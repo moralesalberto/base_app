@@ -1,5 +1,5 @@
 =begin rdoc
-  
+ roles to allow access. add each role and each resource to it.  
 =end
 
 authorization do
