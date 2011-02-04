@@ -1,0 +1,7 @@
+/* theme screen stylesheets */
+
+/* import stylesheets and hide from IE/Mac \*/
+@import url("/stylesheets/reset.css");
+@import url("/stylesheets/coolblue.css");
+@import url("/stylesheets/enhancements.css"); 
+/* end import/hide */
