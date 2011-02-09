@@ -6,3 +6,16 @@ like:
 - authentication (devise)
 - role authorization (declarative_authorization)
 - web-app_theme (neat way to get some styles going)
+
+To get started, you will need three roles
+
+security
+  name: security
+
+admin
+  name: admin
+
+user
+  name: user
+
+
